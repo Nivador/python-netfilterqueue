@@ -97,7 +97,7 @@ cdef class Packet:
 
         self._verdict_is_set = True
 
-    def getBufferSize():
+    def getBufferSize(self):
         return BufferSize
 
     def get_hw(self):
