@@ -2032,7 +2032,7 @@ static PyObject *__pyx_int_138;
 static PyObject *__pyx_int_139;
 static PyObject *__pyx_int_140;
 static PyObject *__pyx_int_255;
-static PyObject *__pyx_int_4096;
+static PyObject *__pyx_int_65536;
 static u_int8_t __pyx_k__6;
 static PyObject *__pyx_tuple_;
 static PyObject *__pyx_tuple__2;
@@ -4898,7 +4898,7 @@ static PyObject *__pyx_pw_14netfilterqueue_14NetfilterQueue_5bind(PyObject *__py
     if (values[5]) {
       __pyx_v_sock_len = __Pyx_PyInt_As_u_int32_t(values[5]); if (unlikely((__pyx_v_sock_len == ((u_int32_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 175, __pyx_L3_error)
     } else {
-      __pyx_v_sock_len = ((u_int32_t)0x257800);
+      __pyx_v_sock_len = ((u_int32_t)0x2057800);
     }
   }
   goto __pyx_L4_argument_unpacking_done;
@@ -4996,7 +4996,7 @@ static PyObject *__pyx_pf_14netfilterqueue_14NetfilterQueue_4bind(struct __pyx_o
  *             range = MaxCopySize
  *         if nfq_set_mode(self.qh, mode, range) < 0:
  */
-  __pyx_t_1 = ((__pyx_v_range > 0xFB0) != 0);
+  __pyx_t_1 = ((__pyx_v_range > 0xFFB0) != 0);
   if (__pyx_t_1) {
 
     /* "netfilterqueue.pyx":185
@@ -5006,7 +5006,7 @@ static PyObject *__pyx_pf_14netfilterqueue_14NetfilterQueue_4bind(struct __pyx_o
  *         if nfq_set_mode(self.qh, mode, range) < 0:
  *             raise OSError("Failed to set packet copy mode.")
  */
-    __pyx_v_range = 0xFB0;
+    __pyx_v_range = 0xFFB0;
 
     /* "netfilterqueue.pyx":184
  *             raise OSError("Failed to create queue %s." % queue_num)
@@ -5352,7 +5352,7 @@ static PyObject *__pyx_pw_14netfilterqueue_14NetfilterQueue_11run(PyObject *__py
 
 static PyObject *__pyx_pf_14netfilterqueue_14NetfilterQueue_10run(struct __pyx_obj_14netfilterqueue_NetfilterQueue *__pyx_v_self, PyObject *__pyx_v_block) {
   int __pyx_v_fd;
-  char __pyx_v_buf[0x1000];
+  char __pyx_v_buf[0x10000];
   int __pyx_v_rv;
   int __pyx_v_recv_flags;
   PyObject *__pyx_r = NULL;
@@ -5639,7 +5639,7 @@ static PyObject *__pyx_pf_14netfilterqueue_14NetfilterQueue_12run_socket(struct 
             __Pyx_DECREF_SET(__pyx_t_5, function);
           }
         }
-        __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_int_4096) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_int_4096);
+        __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_int_65536) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_int_65536);
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 227, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -6822,7 +6822,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitGlobals(void) {
   __pyx_int_139 = PyInt_FromLong(139); if (unlikely(!__pyx_int_139)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_140 = PyInt_FromLong(140); if (unlikely(!__pyx_int_140)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_255 = PyInt_FromLong(255); if (unlikely(!__pyx_int_255)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_4096 = PyInt_FromLong(4096); if (unlikely(!__pyx_int_4096)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_65536 = PyInt_FromLong(65536L); if (unlikely(!__pyx_int_65536)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
