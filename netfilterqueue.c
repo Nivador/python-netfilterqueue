@@ -4893,7 +4893,7 @@ static PyObject *__pyx_pw_14netfilterqueue_14NetfilterQueue_5bind(PyObject *__py
     if (values[4]) {
       __pyx_v_range = __Pyx_PyInt_As_u_int32_t(values[4]); if (unlikely((__pyx_v_range == ((u_int32_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 174, __pyx_L3_error)
     } else {
-      __pyx_v_range = ((u_int32_t)0xFFFF);
+      __pyx_v_range = ((u_int32_t)0xFFFF0);
     }
     if (values[5]) {
       __pyx_v_sock_len = __Pyx_PyInt_As_u_int32_t(values[5]); if (unlikely((__pyx_v_sock_len == ((u_int32_t)-1)) && PyErr_Occurred())) __PYX_ERR(0, 175, __pyx_L3_error)
