@@ -97,6 +97,9 @@ cdef class Packet:
 
         self._verdict_is_set = True
 
+    def getBufferSize():
+        return BufferSize
+
     def get_hw(self):
         """Return the hardware address as Python string."""
         self._hw = nfq_get_packet_hw(self._nfa)
