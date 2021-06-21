@@ -14,7 +14,7 @@ COPY_PACKET = 2
 
 # Packet copying defaults
 DEF DEFAULT_MAX_QUEUELEN = 1024
-DEF MaxPacketSize = 0xFFFF
+DEF MaxPacketSize = 0xFFFF0
 DEF BufferSize = 4096
 DEF MetadataSize = 80
 DEF MaxCopySize = BufferSize - MetadataSize
